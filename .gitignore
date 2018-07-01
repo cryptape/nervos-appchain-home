@@ -1,0 +1,7 @@
+.cache
+node_modules
+backup
+public
+yarn-error.log
+todo
+dist

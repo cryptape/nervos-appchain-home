@@ -1,0 +1,48 @@
+@import "color";
+$green: #4fbc8d;
+$border: solid 1px $green;
+
+.buttonOuter {
+  border: $border;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  .buttonInner {
+    min-width: 120px;
+    display: inline-block;
+    vertical-align: top;
+    border-left: none;
+    border-top: none;
+    text-align: center;
+    background-color: $green;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $colorBase;
+    &:hover {
+      color: #333;
+    }
+  }
+  .diagonal {
+    position: absolute;
+    left: 100%;
+    bottom: 0;
+    border-top: $border;
+    transform: translateY(100%) rotate(-135deg);
+    transform-origin: 0 0;
+  }
+}
+
+.buttonOuter {
+  padding: 0 8px 8px 0;
+  .buttonInner {
+    padding: 10px 25px;
+  }
+  .diagonal {
+    width: 15px;
+  }
+}
