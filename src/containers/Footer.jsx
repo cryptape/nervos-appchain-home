@@ -48,7 +48,7 @@ class Footer extends React.Component {
     const {buttonLabel, footerInfo, buttonTo, iconLinks} = content
     const {iconWechat, iconTelegram, qrContact, qrGroup} = imgs
     const imgList = [iconTelegram, iconWechat, iconWechat]
-    const qrList = [null, qrContact, qrGroup]
+    const qrList = [null, qrGroup, qrContact,]
     return (
       <div id="id-home-footer" className="footer">
         <div className="footerContainer container">

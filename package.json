@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js",
-    "build": "rimraf docs && webpack -p --config config/webpack.config.prod.js",
+    "build": "rimraf dist && webpack -p --config config/webpack.config.prod.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {

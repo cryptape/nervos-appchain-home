@@ -248,16 +248,14 @@ const Case = (props) => {
   return (
     <div className="casesOuter">
       <div className="casesCase">
-        <div className="casesImg">
-          <img className="" src={img} alt=""/>
-        </div>
-        <div className="casesTitle title">{title}</div>
+        <a className="casesLink" target="_blank" href={href}>
+          <div className="casesImg">
+            <img className="" src={img} alt=""/>
+          </div>
+          <div className="casesTitle title">{title}</div>
+        </a>
         <div className="casesText text">{text}</div>
-        {href ? (
-          <a className="casesTitle" target="_blank" href={href}>
-            {href}
-          </a>
-        ) : null}
+
       </div>
     </div>
   )

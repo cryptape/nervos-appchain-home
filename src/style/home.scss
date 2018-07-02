@@ -339,6 +339,11 @@
     text-align: center;
     margin-bottom: 27px;
   }
+
+  .casesLink {
+    font-size: 15px;
+    word-wrap: break-word;
+  }
 }
 
 #id-home-footer {
@@ -415,7 +420,7 @@
     }
 
     .casesOuter {
-      width: 80%;
+      width: 100%;
       padding: 33px 34px 40px;
       margin-bottom: 25px;
     }
