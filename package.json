@@ -9,7 +9,8 @@
   "scripts": {
     "start": "webpack-dev-server --config config/webpack.config.dev.js",
     "build": "rimraf dist && webpack -p --config config/webpack.config.prod.js",
-    "deploy": "yarn run build && cp ./CNAME ./dist && gh-pages -d dist"
+    "predeploy": "yarn install && yarn run build && cp ./CNAME ./dist",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "autoprefixer": "^7.2.5",
