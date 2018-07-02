@@ -8,10 +8,10 @@ import {
   Redirect,
 } from 'react-router-dom'
 import AsyncContainerRoutes, {AsyncMainRoutes} from './components/AsyncContainerRoutes'
-import Fonts from './containers/Fonts'
+// import Fonts from './containers/Fonts'
 import routeTableMain from './config/routeTable'
 import languageTable from './config/languageTable'
-import fontTable from './config/fontTable'
+// import fontTable from './config/fontTable'
 import {log} from './utils'
 import './style/base.scss'
 import './style/font.scss'
@@ -57,7 +57,7 @@ class View extends React.Component {
     return (
       <Router>
         <div>
-          <Route render={() => <Fonts fontTable={fontTable}/>} path='/' key="fonts"/>
+          {/*<Route render={() => <Fonts fontTable={fontTable}/>} path='/' key="fonts"/>*/}
           <Switch>
             {AsyncMainRoutes(routeTableMain, params)}
           </Switch>

@@ -23,14 +23,14 @@ module.exports = {
           name: 'images/[name].[ext]',
         },
       },
-      {
-        test: /\.(otf|woff|woff2|ttf)$/,
-        loader: 'file-loader',
-        options: {
-          mimetype: 'application/font-woff',
-          name: 'fonts/[name].[ext]',
-        },
-      },
+      // {
+      //   test: /\.(otf|woff|woff2|ttf)$/,
+      //   loader: 'file-loader',
+      //   options: {
+      //     mimetype: 'application/font-woff',
+      //     name: 'fonts/[name].[ext]',
+      //   },
+      // },
     ],
   },
   resolve: {
