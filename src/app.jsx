@@ -74,6 +74,9 @@ const addMainView = () => {
 }
 
 const main = () => {
+  // if (location.protocol === 'https:') {
+  //   location.protocol = 'http:'
+  // }
   addMainView()
   // addFonts(fontTable)
 }
